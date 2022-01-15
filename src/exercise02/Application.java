@@ -54,17 +54,4 @@ public class Application {
         }
         sc.close();
     }
-
-    public static List<Integer> getPositionInMatrix(int [][] matrix, int number){
-        List<Integer> position = new ArrayList<>();
-        for (int i = 0; i < matrix.length; i++){
-            for (int j = 0; j < matrix[0].length; j++){
-                if (matrix[i][j] == number){
-                    position.add(i);
-                    position.add(j);
-                }
-            }
-        }
-        return position;
-    }
 }
