@@ -1,4 +1,4 @@
-package application;
+package exercise01;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +13,7 @@ import java.util.Scanner;
 public class Application {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Digite a quantidade de linhas e colunas da Matriz: ");
         int n = sc.nextInt();
         int negativeNumbers = 0;
         List<Integer> mainDiagonal = new ArrayList<>();
@@ -30,7 +31,7 @@ public class Application {
             }
         }
 
-        System.out.println("Main Diagonal: ");
+        System.out.println("\nMain Diagonal: ");
         for (int mainD : mainDiagonal)
             System.out.print(mainD + " ");
 
